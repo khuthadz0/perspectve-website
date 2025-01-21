@@ -1,0 +1,146 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+:root {
+  --color-primary: #ff6b35; /* Orange from your brochure */
+  --color-dark-green: #004e4e;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Typography */
+body {
+  @apply text-gray-900 antialiased;
+}
+
+/* Custom heading styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold;
+}
+
+/* Custom transitions */
+.transition-all {
+  @apply duration-300 ease-in-out;
+}
+
+/* Custom container padding for mobile */
+.container {
+  @apply px-4 sm:px-6 lg:px-8;
+}
+
+/* Custom section spacing */
+section {
+  @apply py-16 md:py-24;
+}
+
+/* Custom button styles */
+.btn {
+  @apply inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm transition-colors duration-200;
+}
+
+.btn-primary {
+  @apply bg-orange-500 text-white hover:bg-orange-600;
+}
+
+.btn-secondary {
+  @apply bg-white text-gray-900 border-gray-300 hover:bg-gray-50;
+}
+
+/* Custom card styles */
+.card {
+  @apply bg-white rounded-lg shadow-lg overflow-hidden transition-shadow duration-200 hover:shadow-xl;
+}
+
+/* Animation classes */
+.fade-in {
+  @apply opacity-0 transition-opacity duration-500;
+}
+
+.fade-in.visible {
+  @apply opacity-100;
+}
+
+/* Custom form styles */
+input,
+textarea,
+select {
+  @apply w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition-all duration-200;
+}
+
+/* Custom background patterns */
+.bg-pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+.scroll-to-top {
+  position: fixed !important;
+  bottom: 2rem !important;
+  right: 2rem !important;
+  z-index: 9999 !important;
+}
+/* Base animation classes */
+[data-animation] {
+  opacity: 0;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-animation].animate-in {
+  opacity: 1;
+}
+
+/* Animation variations */
+[data-animation="fade-up"] {
+  transform: translateY(20px);
+}
+
+[data-animation="fade-up"].animate-in {
+  transform: translateY(0);
+}
+
+[data-animation="fade-down"] {
+  transform: translateY(-20px);
+}
+
+[data-animation="fade-down"].animate-in {
+  transform: translateY(0);
+}
+
+[data-animation="fade-left"] {
+  transform: translateX(-20px);
+}
+
+[data-animation="fade-left"].animate-in {
+  transform: translateX(0);
+}
+
+[data-animation="fade-right"] {
+  transform: translateX(20px);
+}
+
+[data-animation="fade-right"].animate-in {
+  transform: translateX(0);
+}
+
+[data-animation="zoom-in"] {
+  transform: scale(0.95);
+}
+
+[data-animation="zoom-in"].animate-in {
+  transform: scale(1);
+}
+
+/* Transition timing */
+[data-animation] {
+  transition-duration: var(--animation-duration, 0.5s);
+  transition-delay: var(--animation-delay, 0s);
+}
