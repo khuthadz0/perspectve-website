@@ -55,28 +55,28 @@ export const COMPANY_INFO = {
         description: 'Innovative Insurtech Solution for Brokers',
         founder: 'Peet Van De Walt',
         category: 'InsureTech',
-        logo: '/images/portfolio/insure-platform.png'
+        logo: '/images/White-on-black.png'
       },
       {
         name: 'Beer Rewards',
         description: 'Innovative Rewards Tech Platform for Alcohol Consumers',
         founder: 'Thabo & Sinethemba',
         category: 'FinTech',
-        logo: '/images/portfolio/beer-rewards.png'
+        logo: '/images/White-on-black.png'
       },
       {
         name: 'Body Glow',
         description: 'Innovative Global leader in Sustainable & Organic skincare Solution',
         founder: 'Stha Mavundla',
         category: 'Health & Beauty',
-        logo: '/images/portfolio/body-glow.png'
+        logo: '/images/White-on-black.png'
       },
       {
         name: 'Tech Impact Africa',
         description: 'Driving Tech and Impact Across Africas Startup Ecosystem',
         founder: 'Bernard Njathi',
         category: 'Tech Innovation',
-        logo: '/images/portfolio/tech-impact.png'
+        logo: '/images/White-on-black.png'
       }
     ],
     past: ['Suba Capital', 'Mapha', 'Welo', 'DigiPharm', 'Umurava']
